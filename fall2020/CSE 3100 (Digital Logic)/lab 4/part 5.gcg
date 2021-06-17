@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CircuitGroup Version="1.2">
+  <Circuit>
+    <Gates>
+      <Gate Type="Comment" Name="Comment" ID="1">
+        <Point X="224" Y="128" Angle="0" />
+        <Comment>Z = XY’W + XY + YW</Comment>
+      </Gate>
+      <Gate Type="UserInput" Name="X" ID="2">
+        <Point X="224" Y="224" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="Y" ID="3">
+        <Point X="225" Y="301" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="W" ID="4">
+        <Point X="226" Y="376" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="UserOutput" ID="5">
+        <Point X="608" Y="288" Angle="0" />
+      </Gate>
+      <Gate Type="Nor" Name="Nor" ID="6" NumInputs="2">
+        <Point X="64" Y="512" Angle="0" />
+      </Gate>
+      <Gate Type="Or" Name="Or" ID="7" NumInputs="2">
+        <Point X="320" Y="256" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="8" NumInputs="2">
+        <Point X="448" Y="288" Angle="0" />
+      </Gate>
+      <Gate Type="Comment" Name="Comment" ID="9">
+        <Point X="448" Y="352" Angle="0" />
+        <Comment>X Y W Z</Comment>
+      </Gate>
+      <Gate Type="Comment" Name="Comment" ID="10">
+        <Point X="448" Y="416" Angle="0" />
+        <Comment>0 1 1 1</Comment>
+      </Gate>
+      <Gate Type="Comment" Name="Comment" ID="11">
+        <Point X="224" Y="512" Angle="0" />
+        <Comment>Z = XY’W + XY + YW</Comment>
+      </Gate>
+      <Gate Type="UserInput" Name="X" ID="12">
+        <Point X="224" Y="608" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="Y" ID="13">
+        <Point X="224" Y="704" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="W" ID="14">
+        <Point X="224" Y="800" Angle="0" />
+      </Gate>
+      <Gate Type="Or" Name="Or" ID="15" NumInputs="2">
+        <Point X="384" Y="640" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="16" NumInputs="2">
+        <Point X="544" Y="704" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="UserOutput" ID="17">
+        <Point X="672" Y="704" Angle="0" />
+      </Gate>
+      <Gate Type="Comment" Name="Comment" ID="18">
+        <Point X="416" Y="800" Angle="0" />
+        <Comment>X Y W Z</Comment>
+      </Gate>
+      <Gate Type="Comment" Name="Comment" ID="19">
+        <Point X="416" Y="864" Angle="0" />
+        <Comment>1 1 0 0</Comment>
+      </Gate>
+      <Gate Type="Comment" Name="Comment" ID="20">
+        <Point X="224" Y="952" Angle="0" />
+        <Comment>Z = XY’W + XY + YW</Comment>
+      </Gate>
+      <Gate Type="UserInput" Name="X" ID="21">
+        <Point X="224" Y="1024" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="Y" ID="22">
+        <Point X="224" Y="1120" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="W" ID="23">
+        <Point X="224" Y="1216" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="24" NumInputs="2">
+        <Point X="544" Y="1120" Angle="0" />
+      </Gate>
+      <Gate Type="Or" Name="Or" ID="25" NumInputs="2">
+        <Point X="354" Y="1067" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="UserOutput" ID="26">
+        <Point X="672" Y="1120" Angle="0" />
+      </Gate>
+      <Gate Type="Comment" Name="Comment" ID="27">
+        <Point X="512" Y="1216" Angle="0" />
+        <Comment>X Y W Z</Comment>
+      </Gate>
+      <Gate Type="Comment" Name="Comment" ID="28">
+        <Point X="512" Y="1280" Angle="0" />
+        <Comment>0 0 1 1</Comment>
+      </Gate>
+      <Gate Type="Comment" Name="Comment" ID="29">
+        <Point X="213" Y="1348" Angle="0" />
+        <Comment>Truth Table for Z = XY’W + XY + YW</Comment>
+      </Gate>
+      <Gate Type="Comment" Name="Comment" ID="30">
+        <Point X="224" Y="1408" Angle="0" />
+        <Comment>X Y W Z</Comment>
+      </Gate>
+      <Gate Type="Comment" Name="Comment" ID="31">
+        <Point X="224" Y="1472" Angle="0" />
+        <Comment>0 1 1 1</Comment>
+      </Gate>
+      <Gate Type="Comment" Name="Comment" ID="32">
+        <Point X="224" Y="1536" Angle="0" />
+        <Comment>1 1 0 0</Comment>
+      </Gate>
+      <Gate Type="Comment" Name="Comment" ID="33">
+        <Point X="224" Y="1600" Angle="0" />
+        <Comment>0 0 1 0</Comment>
+      </Gate>
+    </Gates>
+    <Wires>
+      <Wire>
+        <From ID="8" Port="0" />
+        <To ID="5" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="3" Port="0" />
+        <To ID="7" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="2" Port="0" />
+        <To ID="7" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="4" Port="0" />
+        <To ID="8" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="7" Port="0" />
+        <To ID="8" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="13" Port="0" />
+        <To ID="15" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="12" Port="0" />
+        <To ID="15" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="14" Port="0" />
+        <To ID="16" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="15" Port="0" />
+        <To ID="16" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="16" Port="0" />
+        <To ID="17" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="23" Port="0" />
+        <To ID="24" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="25" Port="0" />
+        <To ID="24" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="22" Port="0" />
+        <To ID="25" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="21" Port="0" />
+        <To ID="25" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="24" Port="0" />
+        <To ID="26" Port="0" />
+      </Wire>
+    </Wires>
+  </Circuit>
+</CircuitGroup>
